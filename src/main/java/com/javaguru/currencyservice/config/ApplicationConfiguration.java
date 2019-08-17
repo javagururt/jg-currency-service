@@ -1,4 +1,4 @@
-package com.javaguru.currencyservice;
+package com.javaguru.currencyservice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

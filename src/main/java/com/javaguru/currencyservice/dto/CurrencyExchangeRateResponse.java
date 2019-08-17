@@ -1,17 +1,13 @@
-package com.javaguru.currencyservice;
+package com.javaguru.currencyservice.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
 
-class CurrencyRateDto {
+public class CurrencyExchangeRateResponse {
 
     private String base;
 
@@ -48,7 +44,7 @@ class CurrencyRateDto {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CurrencyRateDto that = (CurrencyRateDto) o;
+        CurrencyExchangeRateResponse that = (CurrencyExchangeRateResponse) o;
         return Objects.equals(base, that.base) &&
                 Objects.equals(date, that.date) &&
                 Objects.equals(rates, that.rates);
